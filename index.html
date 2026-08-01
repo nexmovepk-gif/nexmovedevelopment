@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexMove Development | Enterprise Web, Software & Digital Marketing Agency</title>
+  <meta name="description"
+    content="NexMove Development is a premier digital engineering agency delivering custom web development, technical SEO, SMM, digital marketing, SaaS platforms, and mobile apps. Founded by CEO Ali Hamza.">
+  <meta name="keywords"
+    content="NexMove Development, Web Development, Technical SEO, SMM, Social Media Marketing, Digital Marketing, Software Engineering, Mobile Apps, Ali Hamza CEO">
+  <meta name="author" content="Ali Hamza — Founder & CEO, NexMove Development">
+
+  <!-- Favicon Mandatory Path -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NexMove Development | Web, SEO, SMM & Software Engineering">
+  <meta property="og:description"
+    content="Transforming businesses with custom web development, technical SEO, social media marketing, and software engineering starting from 70,000 PKR.">
+  <meta property="og:image" content="Logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "LocalBusiness"],
+    "name": "NexMove Development",
+    "url": "https://nexmove.pk",
+    "logo": "https://nexmove.pk/Logo.png",
+    "telephone": "+923225673641",
+    "email": "nexmove.pk@gmail.com",
+    "priceRange": "$$",
+    "description": "Enterprise agency specializing in Custom Web Development, Technical SEO, Social Media Marketing (SMM), Digital Marketing, Software Engineering, and Mobile Apps starting from 70,000 PKR.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PK"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Ali Hamza",
+      "jobTitle": "Founder & Chief Executive Officer",
+      "description": "Founder & CEO Ali Hamza — Leading Digital Innovation Since '23"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-contacts">
+          <a href="tel:+923225673641" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +92 322 5673641
+          </a>
+          <a href="mailto:nexmove.pk@gmail.com" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            nexmove.pk@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-primary btn-sm">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="projects.html" class="nav-link">Case Studies</a>
+          <a href="packages.html" class="nav-link">Packages</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Dev</span></span>
+        </a>
+        <button class="drawer-close" id="mobileDrawerClose">&times;</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link active">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="services.html" class="drawer-link">Services</a>
+        <a href="portfolio.html" class="drawer-link">Portfolio</a>
+        <a href="projects.html" class="drawer-link">Case Studies</a>
+        <a href="packages.html" class="drawer-link">Packages</a>
+        <a href="contact.html" class="drawer-link">Contact Us</a>
+      </div>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="contact.html" class="btn btn-primary" style="width:100%;">Book Strategy Call</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION — MODERN SAAS AGENCY LOOK -->
+  <section class="hero-section hero-home" id="heroSection">
+    <!-- Glowing Background Orbs -->
+    <div class="glow-orb orb-top-left"></div>
+    <div class="glow-orb orb-bottom-right"></div>
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="container hero-container">
+
+      <!-- LEFT COLUMN: Typography & CTAs -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="badge-pulse"></span>
+          <span>Digital Innovation Studio</span>
+        </div>
+
+        <h1 class="hero-title">
+          Next Gen AI Powered<br>
+          <span class="text-gradient">SaaS, Mobile Apps & Web Platforms</span>
+        </h1>
+
+        <p class="hero-description">
+          We architect high performance digital ecosystems, enterprise software, and search optimized platforms built to
+          scale revenue and outrank competitors.
+        </p>
+
+        <div class="hero-actions">
+          <a href="packages.html" class="btn btn-primary-glow" id="heroPackagesBtn">
+            <span>View Pricing & Packages</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="portfolio.html" class="btn btn-glass" id="heroPortfolioBtn">Explore Work</a>
+        </div>
+
+        <!-- Live Trust Metrics -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">100<span class="stat-accent">%</span></div>
+            <div class="stat-label">Core Web Vitals</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-num">12<span class="stat-accent">+</span></div>
+            <div class="stat-label">Enterprise Projects</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-num">PKR 70k<span class="stat-accent">+</span></div>
+            <div class="stat-label">Starting Tier</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Modern Interactive Visual Mockup -->
+      <div class="hero-visual">
+        <div class="visual-wrapper">
+
+          <!-- Main Glass App Window -->
+          <div class="app-window glass-panel">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-tab">nexmove-core-v2.0</div>
+            </div>
+            <div class="window-content">
+              <div class="metric-grid">
+                <div class="mini-card">
+                  <span class="label">SEO Health</span>
+                  <span class="value cyan">99.8%</span>
+                  <div class="bar-bg">
+                    <div class="bar-fill cyan-fill" style="width: 98%;"></div>
+                  </div>
+                </div>
+                <div class="mini-card">
+                  <span class="label">Performance</span>
+                  <span class="value purple">100 / 100</span>
+                  <div class="bar-bg">
+                    <div class="bar-fill purple-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="code-snippet">
+                <span class="code-line"><span class="kwd">export default</span> <span class="kwd">async function</span>
+                  <span class="func">DeployAgency</span>() {</span>
+                <span class="code-line indent">&nbsp;&nbsp;<span class="kwd">await</span> NexMove.<span
+                    class="func">optimize</span>({ speed: <span class="str">'100ms'</span>, seo: <span
+                    class="bool">true</span> });</span>
+                <span class="code-line indent">&nbsp;&nbsp;<span class="kwd">return</span> <span class="str">"Global
+                    Reach Scaled"</span>;</span>
+                <span class="code-line">}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Glass Badge 1 (Top Right) -->
+          <div class="floating-badge badge-top glass-panel">
+            <div class="badge-icon green-icon">✓</div>
+            <div>
+              <div class="badge-title">SEO Rank #1</div>
+              <div class="badge-sub">Schema & Speed Verified</div>
+            </div>
+          </div>
+
+          <!-- Floating Glass Badge 2 (Bottom Left) -->
+          <div class="floating-badge badge-bottom glass-panel">
+            <div class="badge-icon blue-icon">⚡</div>
+            <div>
+              <div class="badge-title">Next.js & Mobile Native</div>
+              <div class="badge-sub">Enterprise Tech Stack</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CORE SERVICES OVERVIEW SECTION -->
+  <section class="section-padding" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Services Matrix</div>
+        <h2>Full-Stack Digital & Engineering Services</h2>
+        <p>From custom web builds starting at 70,000 PKR to technical SEO, SMM campaigns, and SaaS engineering.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Custom Web Development</h3>
+          <p>Ultra-fast web platforms engineered with HTML5, CSS3, React, Next.js, and glassmorphic UI. Starting from
+            <strong>70,000 PKR</strong>.
+          </p>
+          <ul class="service-list">
+            <li>Glassmorphic Custom UI/UX</li>
+            <li>Next.js SSR & Speed Optimization</li>
+            <li>Starting from PKR 70,000</li>
+          </ul>
+          <a href="services.html#web-development" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Technical SEO & Search Dominance</h3>
+          <p>Core Web Vitals optimization, JSON-LD Schema, and high-authority audits to dominate Google. Starting from
+            <strong>70,000 PKR</strong>.
+          </p>
+          <ul class="service-list">
+            <li>Core Web Vitals 100 Score</li>
+            <li>Structured Schema Data</li>
+            <li>Starting from PKR 70,000</li>
+          </ul>
+          <a href="services.html#technical-seo" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Social Media Marketing (SMM)</h3>
+          <p>Data-driven SMM strategy across Meta, LinkedIn, and TikTok to scale brand awareness and lead generation.
+            Starting from <strong>70,000 PKR</strong>.</p>
+          <ul class="service-list">
+            <li>Targeted Social Ad Campaigns</li>
+            <li>High-Converting Creative Assets</li>
+            <li>Starting from PKR 70,000</li>
+          </ul>
+          <a href="services.html#smm" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Digital Marketing (DM) & Growth</h3>
+          <p>Full-funnel digital marketing, PPC advertising, CRO, and automated customer acquisition engines starting
+            from <strong>70,000 PKR</strong>.</p>
+          <ul class="service-list">
+            <li>Funnel & PPC Ad Optimization</li>
+            <li>Lead Generation Systems</li>
+            <li>Starting from PKR 70,000</li>
+          </ul>
+          <a href="services.html#digital-marketing" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Software Engineering & SaaS</h3>
+          <p>Custom SaaS platforms, microservices architecture, REST/GraphQL APIs, and fault-tolerant cloud backends
+            built for high scalability.</p>
+          <ul class="service-list">
+            <li>Multi-Tenancy SaaS Architecture</li>
+            <li>API & Database Infrastructure</li>
+            <li>Enterprise Cloud Support</li>
+          </ul>
+          <a href="services.html#software-engineering" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Mobile Application Development</h3>
+          <p>Native iOS & Android mobile applications and React Native / Flutter builds engineered for high performance
+            and app store ranking.</p>
+          <ul class="service-list">
+            <li>iOS (Swift) & Android (Kotlin)</li>
+            <li>Cross-Platform React Native / Flutter</li>
+            <li>App Store Optimization (ASO)</li>
+          </ul>
+          <a href="services.html#mobile-development" class="service-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== -->
+  <!-- TRUSTED CLIENTS & PARTNERS — ANIMATED INFINITE MARQUEE TICKER -->
+  <!-- Direct Agency Clients: Al Fatima Academy, London Prestige Chauffeur, Aurrify, -->
+  <!-- AITS Official, Ustad Labha Food Point, BJ Architects, Nobel Build Repair, -->
+  <!-- RSP Water Plant, Prestige Chauffeur London, Airport Luggage Vans -->
+  <!-- Software House Partners/Collaborations: Sofil Solution, DPO Digital Portal -->
+  <!-- ========================================================== -->
+  <section class="client-marquee-section" id="trustedClients">
+    <div class="container" style="margin-bottom: 2rem;">
+      <div class="section-header text-center" style="margin-bottom: 1.5rem;">
+        <div class="badge-pill">Trusted By</div>
+        <h2>Our Clients <span class="text-gradient">& Partners</span></h2>
+        <p>Proudly serving direct agency clients and collaborating with leading software houses.</p>
+      </div>
+    </div>
+    <div class="marquee-container">
+      <!-- Duplicated track for seamless infinite scroll -->
+      <div class="marquee-track" id="marqueeTrack">
+
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+
+
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="AITS Official — Direct Client">
+          <img src="aits official.jpeg" alt="AITS Official" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Ustad Labha Food Point — Direct Client">
+          <img src="ustad labha food point.jpeg" alt="Ustad Labha Food Point" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="AITS Official — Direct Client">
+          <img src="aits official.jpeg" alt="AITS Official" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Ustad Labha Food Point — Direct Client">
+          <img src="ustad labha food point.jpeg" alt="Ustad Labha Food Point" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CLIENTS & BRANDS SECTION ====== -->
+  <section class="clients-section padding-section" id="clients">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Brands & Clients We've Worked With</h2>
+        <p>Trusted by local businesses, UK luxury services, and global SaaS platforms.</p>
+      </div>
+
+      <div class="clients-grid">
+        <!-- Client 10: Prestige Chauffeur London -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London Logo" class="client-logo"
+              loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Prestige Chauffeur London</h4>
+            <span class="client-tag">UK • Luxury Fleet & Transfer</span>
+            <p>Comprehensive technical SEO overhaul, high-intent keyword ranking, and speed optimization.</p>
+          </div>
+        </div>
+        <!-- Client 1: London Prestige Chauffeur -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur Logo" class="client-logo"
+              loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>London Prestige Chauffeur</h4>
+            <span class="client-tag">UK • Luxury Transport</span>
+            <p>Technical SEO Audit, Schema Markup, and Keyword Strategy for Google #1 rankings.</p>
+          </div>
+        </div>
+
+        <!-- Client 2: Airport Luggage Vans -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans Logo" class="client-logo"
+              loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Airport Luggage Vans</h4>
+            <span class="client-tag">UK • Airport Transfers</span>
+            <p>Custom Web Portal Development, UI/UX Design, and Booking Engine Integration.</p>
+          </div>
+        </div>
+
+        <!-- Client 3: Al Fatima Academy -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="al fatima academy.jpg" alt="Al Fatima Academy Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Al Fatima Academy</h4>
+            <span class="client-tag">Pakistan • Education</span>
+            <p>Educational Platform Architecture, On-Page SEO, and Web Management.</p>
+          </div>
+        </div>
+        <!-- Client 11: NBR (Nobel Build Repairs) -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <img src="nobel build repair.jpeg" alt="NBR Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Nobel Build Repairs (NBR)</h4>
+            <span class="client-tag">UK • Construction & Renovation</span>
+            <p>Social media campaigns, lead generation ads, and portfolio showcasing across platforms.</p>
+          </div>
+        </div>
+        <!-- Client 4: BJ Architects -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="bj architects.jpeg" alt="BJ Architects Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>BJ Architects</h4>
+            <span class="client-tag">Pakistan • Architecture</span>
+            <p>Social Media Management, Creative Design, and Behance Portfolio Strategy.</p>
+          </div>
+        </div>
+        <!-- Client 9: DPO -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #000000;">
+            <img src="DPO digital portal official.jpeg" alt="DPO Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>DPO</h4>
+            <span class="client-tag">Professional Services</span>
+            <p>Digital presence management, brand positioning, and search engine optimization.</p>
+          </div>
+        </div>
+        <!-- Client 8: Sofil Solutions -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <img src="sofil solution.jpeg" alt="Sofil Solutions Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Sofil Solutions</h4>
+            <span class="client-tag">IT & Tech Solutions</span>
+            <p>Corporate web design, lead generation infrastructure, and digital media management.</p>
+          </div>
+        </div>
+        <!-- Client 6: Ustad Labha Food Point -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <img src="ustad labha food point.jpeg" alt="Ustad Labha Food Point Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Ustad Labha Food Point</h4>
+            <span class="client-tag">Pakistan • Food & Dining</span>
+            <p>Local SEO, Google Business Profile (GMB) Management, and Meta Ad Campaigns.</p>
+          </div>
+        </div>
+        <!-- Client 7: RSP Water Plant -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <!-- Local file name update karein agar aapke pass laptop me image hai -->
+            <img src="rsp water plant.jpeg" alt="RSP Water Plant Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>RSP Water Plant</h4>
+            <span class="client-tag">Water Purification & Industrial</span>
+            <p>Brand identity setup, digital marketing strategy, and local SEO for customer reach.</p>
+          </div>
+        </div>
+        <!-- 1. Aurrify Card -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <!-- Local image ka path/name check kar lein (e.g. aurrify-logo.png) -->
+            <img src="aurrify.jpeg" alt="Aurrify Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>Aurrify</h4>
+            <span class="client-tag">E-Commerce • Brand Strategy</span>
+            <p>Social Media Marketing, Meta Ad Campaigns, and E-Commerce Brand Growth Strategy.</p>
+          </div>
+        </div>
+
+        <!-- 2. AITS / Al Fatima Academy Card -->
+        <div class="glass-card client-card">
+          <div class="client-logo-box" style="background-color: #ffffff;">
+            <img src="aits official.jpeg" alt="AITS OFFICIAL Logo" class="client-logo" loading="lazy">
+          </div>
+          <div class="client-details">
+            <h4>AITS OFFICIAL</h4>
+            <span class="client-tag">Pakistan • Education</span>
+            <p>Educational Platform Architecture, On-Page SEO, and Web Management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- QUICK BUDGET CALCULATOR TEASER -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <div>
+            <div class="badge-pill">Custom Offer Tool</div>
+            <h2>Propose Your Custom Project Budget</h2>
+            <p style="margin-bottom: 2rem;">Select required services (Web, SEO, SMM, DM, Software, Mobile) and adjust
+              the price slider. Standard services start from <strong>PKR 70,000</strong>, high-tier engineering from
+              <strong>PKR 250,000+</strong>.
+            </p>
+            <a href="packages.html" class="btn btn-glow">Launch Full Negotiator Tool &rarr;</a>
+          </div>
+
+          <div class="calc-summary-card">
+            <h3>Baseline Package Highlights</h3>
+            <div style="margin: 1.5rem 0;">
+              <div class="summary-row">
+                <span>Standard Services Floor:</span>
+                <span class="text-cyan" style="font-weight:700;">PKR 70,000</span>
+              </div>
+              <div class="summary-row">
+                <span>Engineering & Apps Floor:</span>
+                <span style="font-weight:600;">PKR 250,000+</span>
+              </div>
+              <div class="summary-row">
+                <span>Turnaround Guarantee:</span>
+                <span style="font-weight:600;">Fast 1 - 3 Weeks</span>
+              </div>
+              <div class="summary-row summary-total">
+                <span>Currency Accepted:</span>
+                <span class="text-cyan">PKR & USD</span>
+              </div>
+            </div>
+            <a href="packages.html" class="btn btn-outline" style="width:100%;">Negotiate Custom Proposal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER WITH FOUNDER BRANDING -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:0.75rem;">
+            <img src="Logo.png" alt="NexMove Development Logo">
+            <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+          </a>
+          <p>NexMove Development is a world class digital agency specializing in Custom Web Development, Technical SEO,
+            Social Media Marketing, Digital Marketing, SaaS and Software Engineering starting at PKR 70,000.</p>
+          <div style="margin-top: 1.25rem; color: var(--accent-cyan); font-weight:700; font-size:0.95rem;">
+            Founder & CEO Ali Hamza Leading Digital Innovation Since '23
+          </div>
+          <div style="margin-top: 0.5rem; color: var(--text-muted); font-size:0.85rem;">
+            Vision &nbsp;|&nbsp; Leadership &nbsp;|&nbsp; Innovation &nbsp;|&nbsp; Growth
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us (CEO Ali Hamza)</a>
+            <a href="services.html">Services Overview</a>
+            <a href="portfolio.html">Portfolio Gallery</a>
+            <a href="projects.html">Case Studies</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="services.html#web-development">Web Development</a>
+            <a href="services.html#technical-seo">Technical SEO</a>
+            <a href="services.html#smm">SMM Social Media</a>
+            <a href="services.html#digital-marketing">Digital Marketing</a>
+            <a href="services.html#software-engineering">Software Engineering</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+923225673641">📞 +92 322 5673641</a>
+            <a href="mailto:nexmove.pk@gmail.com">✉️ nexmove.pk@gmail.com</a>
+            <a href="packages.html">💰 Packages & Pricing</a>
+            <a href="contact.html">📅 Book Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NexMove Development. All Rights Reserved.</div>
+        <div>Founder & CEO: Ali Hamza &nbsp;|&nbsp; Vision &nbsp;·&nbsp; Leadership &nbsp;·&nbsp; Innovation
+          &nbsp;·&nbsp; Growth</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | NexMove Development — Founder & CEO Ali Hamza</title>
+  <meta name="description"
+    content="NexMove Development — led by Founder & CEO Ali Hamza. Leading digital innovation since 2023 with Vision, Leadership, Innovation & Growth as core pillars.">
+  <meta name="keywords"
+    content="Ali Hamza CEO, NexMove Development, Founder Digital Innovation, Web Development, Technical SEO, SMM, Digital Marketing">
+  <meta name="author" content="Ali Hamza — Founder & CEO, NexMove Development">
+
+  <!-- Mandatory Favicon Path -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About NexMove Development | Founder & CEO Ali Hamza">
+  <meta property="og:description"
+    content="Founder & CEO Ali Hamza — Leading Digital Innovation Since '23. Vision | Leadership | Innovation | Growth.">
+  <meta property="og:image" content="assets/images/ali-hamza-ceo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- AOS Library (For Content & Grid Animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    /* Global Animated Background Video/Canvas Effect */
+    #globalBgCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      pointer-events: none;
+      background: radial-gradient(circle at 50% 50%, #080f1e 0%, #030712 100%);
+    }
+
+    /* Animated Glowing Gradient Overlay */
+    .global-ambient-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(0, 210, 255, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(121, 40, 202, 0.08) 0%, transparent 40%);
+      animation: ambientPulse 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes ambientPulse {
+      0% {
+        opacity: 0.5;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+
+    /* Smooth Page Transition */
+    body {
+      animation: pageFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes pageFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-contacts">
+          <a href="tel:+923225673641" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +92 322 5673641
+          </a>
+          <a href="mailto:nexmove.pk@gmail.com" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            nexmove.pk@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-primary btn-sm">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="projects.html" class="nav-link">Case Studies</a>
+          <a href="packages.html" class="nav-link">Packages</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Dev</span></span>
+        </a>
+        <button class="drawer-close" id="mobileDrawerClose">&times;</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link active">About Us</a>
+        <a href="services.html" class="drawer-link">Services</a>
+        <a href="portfolio.html" class="drawer-link">Portfolio</a>
+        <a href="projects.html" class="drawer-link">Case Studies</a>
+        <a href="packages.html" class="drawer-link">Packages</a>
+        <a href="contact.html" class="drawer-link">Contact Us</a>
+      </div>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="contact.html" class="btn btn-primary" style="width:100%;">Book Strategy Call</a>
+    </div>
+  </div>
+
+  <!-- HERO — ABOUT PAGE: Executive Office Dark Vibe Background -->
+  <section class="page-hero hero-about">
+    <div class="container text-center" style="position: relative; z-index: 2;">
+      <div class="badge-pill">Who We Are</div>
+      <h1>Founder & CEO Ali Hamza <span class="text-gradient">Leading Digital Innovation Since '23</span></h1>
+      <p style="max-width: 750px; margin: 1rem auto 0;">NexMove Development was built by Ali Hamza from the ground up
+        a visionary leader driving enterprise web development, technical SEO, SMM, and software engineering excellence.
+      </p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
+        <span class="badge-pill" style="margin-bottom: 0;">Vision</span>
+        <span class="badge-pill" style="margin-bottom: 0;">Leadership</span>
+        <span class="badge-pill" style="margin-bottom: 0;">Innovation</span>
+        <span class="badge-pill" style="margin-bottom: 0;">Growth</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO SHOWCASE SECTION -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="glass-card ceo-card glow-border">
+        <div class="ceo-image-wrap">
+          <img src="assets/images/ali-hamza-ceo.png" alt="Ali Hamza — Founder & CEO, NexMove Development">
+        </div>
+        <div>
+          <div class="badge-pill">Executive Leadership</div>
+          <h2 style="font-size:2.4rem; margin-bottom: 0.3rem;">Ali Hamza</h2>
+          <div style="color:var(--accent-cyan); font-weight:700; font-size:1.15rem; margin-bottom: 0.5rem;">Founder &
+            Chief Executive Officer</div>
+          <div style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 1.5rem;">Leading
+            Digital Innovation Since '23</div>
+          <p style="margin-bottom: 1.25rem; font-size: 1.05rem;">
+            Under the strategic leadership of <strong>Ali Hamza</strong>, NexMove Development has grown into a premier
+            full service digital and engineering house. With expertise spanning Web Development, Technical SEO, Social
+            Media Marketing, and SaaS engineering, Ali leads a team committed to client growth starting from
+            baseline 70,000 PKR packages.
+          </p>
+          <blockquote
+            style="border-left: 3px solid var(--accent-cyan); padding-left: 1rem; color: var(--text-main); font-style: italic; margin-bottom: 1.75rem;">
+            "Whether a client needs a high converting web presence, rank 1 Google SEO, SMM brand growth, or enterprise
+            software we build solutions that deliver undeniable ROI."
+          </blockquote>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="https://wa.me/923225673641?text=Hello%20Ali,%20I%20want%20to%20connect%20with%20leadership%20regarding%20NexMove%20services."
+              class="btn btn-primary btn-sm" id="ceoConnectBtn" target="_blank" rel="noopener noreferrer">
+              Connect with Leadership
+            </a>
+            <a href="packages.html" class="btn btn-outline btn-sm">View Packages & Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES SECTION: Vision | Leadership | Innovation | Growth -->
+  <section class="section-padding" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Our Operational Principles</div>
+        <h2>Core Pillars: <span class="text-gradient">Vision | Leadership | Innovation | Growth</span></h2>
+        <p>The four values guiding every project delivered by NexMove Development under CEO Ali Hamza's leadership.</p>
+      </div>
+
+      <div class="values-grid">
+        <!-- Value 1: Vision -->
+        <div class="glass-card value-card">
+          <div class="value-num">01</div>
+          <h3>Vision</h3>
+          <p>We build web systems, SEO architectures, and SMM growth strategies engineered to scale businesses from
+            baseline PKR 70,000 packages to enterprise dominance. Every strategy is aligned to long term client success.
+          </p>
+        </div>
+
+        <!-- Value 2: Leadership -->
+        <div class="glass-card value-card">
+          <div class="value-num">02</div>
+          <h3>Leadership</h3>
+          <p>Under Founder & CEO Ali Hamza's guidance, our senior team takes complete ownership of code quality,
+            campaign performance, and transparent communication on every single deliverable.</p>
+        </div>
+
+        <!-- Value 3: Innovation -->
+        <div class="glass-card value-card">
+          <div class="value-num">03</div>
+          <h3>Innovation</h3>
+          <p>Integrating modern glassmorphic web design, sub-second Core Web Vitals, AI-powered marketing funnels, and
+            fault-tolerant cloud backends, innovation is embedded in our DNA since day one.</p>
+        </div>
+
+        <!-- Value 4: Growth -->
+        <div class="glass-card value-card">
+          <div class="value-num">04</div>
+          <h3>Growth</h3>
+          <p>Every web page, SEO keyword, and SMM campaign is engineered with a metrics first mindset to maximize
+            conversion rates and revenue ROI for each client we work with.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== -->
+  <!-- TRUSTED CLIENTS & PARTNERS — ANIMATED INFINITE MARQUEE TICKER -->
+  <!-- Direct Agency Clients: Al Fatima Academy, London Prestige Chauffeur, Aurrify, -->
+  <!-- AITS Official, Ustad Labha Food Point, BJ Architects, Nobel Build Repair, -->
+  <!-- RSP Water Plant, Prestige Chauffeur London, Airport Luggage Vans -->
+  <!-- Software House Partners/Collaborations: Sofil Solution, DPO Digital Portal -->
+  <!-- ========================================================== -->
+  <section class="client-marquee-section" id="trustedClients">
+    <div class="container" style="margin-bottom: 2rem;">
+      <div class="section-header text-center" style="margin-bottom: 1.5rem;">
+        <div class="badge-pill">Trusted By</div>
+        <h2>Our Clients <span class="text-gradient">& Partners</span></h2>
+        <p>Proudly serving direct agency clients and collaborating with leading software houses.</p>
+      </div>
+    </div>
+    <div class="marquee-container">
+      <!-- Duplicated track for seamless infinite scroll -->
+      <div class="marquee-track" id="marqueeTrack">
+
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+
+
+
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="AITS Official — Direct Client">
+          <img src="aits official.jpeg" alt="AITS Official" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Ustad Labha Food Point — Direct Client">
+          <img src="ustad labha food point.jpeg" alt="Ustad Labha Food Point" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+        <!-- SOFTWARE HOUSE COLLABORATION: Sofil Solution -->
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Sofil Solution — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgb(248, 251, 252);">
+          <img src="sofil solution.jpeg" alt="Sofil Solution — Software House Partner" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Nobel Build Repair — Direct Client">
+          <img src="nobel build repair.jpeg" alt="Nobel Build Repair" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="RSP Water Plant — Direct Client">
+          <img src="rsp water plant.jpeg" alt="RSP Water Plant" class="client-logo-img">
+        </div>
+
+        <!-- SOFTWARE HOUSE COLLABORATION: DPO Digital Portal -->
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="DPO Digital Portal — Software House Partner"
+          style="border-color: rgba(0,210,255,0.4); background: rgba(0,210,255,0.05);">
+          <img src="DPO digital portal official.jpeg" alt="DPO Digital Portal — Software House Partner"
+            class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="Prestige Chauffeur London — Direct Client">
+          <img src="prestige chauffeur london.png" alt="Prestige Chauffeur London" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="Airport Luggage Vans — Direct Client">
+          <img src="Airport Luggage Vans Final logo-01.jpg.jpeg" alt="Airport Luggage Vans" class="client-logo-img">
+        </div>
+
+        <!-- === DUPLICATE SET FOR SEAMLESS LOOP === -->
+        <div class="client-logo-card" style="background-color: #000000;" title="Al Fatima Academy — Direct Client">
+          <img src="al fatima academy.jpg" alt="Al Fatima Academy" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;"
+          title="London Prestige Chauffeur — Direct Client">
+          <img src="london prestige chauffeur logo.jpeg" alt="London Prestige Chauffeur" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Aurrify — Direct Client">
+          <img src="aurrify.jpeg" alt="Aurrify" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="AITS Official — Direct Client">
+          <img src="aits official.jpeg" alt="AITS Official" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #ffffff;" title="Ustad Labha Food Point — Direct Client">
+          <img src="ustad labha food point.jpeg" alt="Ustad Labha Food Point" class="client-logo-img">
+        </div>
+        <div class="client-logo-card" style="background-color: #000000;" title="BJ Architects — Direct Client">
+          <img src="bj architects.jpeg" alt="BJ Architects" class="client-logo-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:0.75rem;">
+            <img src="Logo.png" alt="NexMove Development Logo">
+            <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+          </a>
+          <p>NexMove Development is led by Founder & CEO Ali Hamza delivering Custom Web Development, Technical SEO,
+            SMM, Digital Marketing, and Software Engineering excellence since 2023.</p>
+          <div style="margin-top: 1rem; color: var(--accent-cyan); font-weight: 700; font-size: 0.9rem;">
+            Vision &nbsp;|&nbsp; Leadership &nbsp;|&nbsp; Innovation &nbsp;|&nbsp; Growth
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="projects.html">Case Studies</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="services.html#web-development">Web Development</a>
+            <a href="services.html#technical-seo">Technical SEO</a>
+            <a href="services.html#smm">SMM Social Media</a>
+            <a href="services.html#digital-marketing">Digital Marketing</a>
+            <a href="services.html#software-engineering">Software Engineering</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+923225673641">📞 +92 322 5673641</a>
+            <a href="mailto:nexmove.pk@gmail.com">✉️ nexmove.pk@gmail.com</a>
+            <a href="packages.html">💰 Negotiate Custom Price</a>
+            <a href="contact.html">📅 Book Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NexMove Development. All Rights Reserved.</div>
+        <div>Founder & CEO: Ali Hamza &nbsp;|&nbsp; Leading Digital Innovation Since '23</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

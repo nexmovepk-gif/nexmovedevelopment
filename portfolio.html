@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Work Gallery | NexMove Development</title>
+  <meta name="description"
+    content="Explore NexMove Development's real portfolio: Airport Luggage Vans, London Prestige, Al Fatima Academy, Aurrify SMM, Nobel Build Repairs SEO, RSY Yachts, and more.">
+  <meta name="keywords"
+    content="NexMove Portfolio, Web Development Showcase, SEO Success Stories, SMM Projects, Mobile Apps Gallery, Ali Hamza CEO">
+  <meta name="author" content="Ali Hamza — Founder & CEO, NexMove Development">
+
+  <!-- Mandatory Favicon Path -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio Gallery | NexMove Development">
+  <meta property="og:description" content="Real client projects — Web Dev, SEO, SMM, SaaS & Mobile App showcase.">
+  <meta property="og:image" content="Logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-contacts">
+          <a href="tel:+923225673641" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +92 322 5673641
+          </a>
+          <a href="mailto:nexmove.pk@gmail.com" class="top-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            nexmove.pk@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-primary btn-sm">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
+          <a href="projects.html" class="nav-link">Case Studies</a>
+          <a href="packages.html" class="nav-link">Packages</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo">
+          <img src="Logo.png" alt="NexMove Development Logo">
+          <span class="brand-text">NexMove <span class="text-cyan">Dev</span></span>
+        </a>
+        <button class="drawer-close" id="mobileDrawerClose">&times;</button>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About Us</a>
+        <a href="services.html" class="drawer-link">Services</a>
+        <a href="portfolio.html" class="drawer-link active">Portfolio</a>
+        <a href="projects.html" class="drawer-link">Case Studies</a>
+        <a href="packages.html" class="drawer-link">Packages</a>
+        <a href="contact.html" class="drawer-link">Contact Us</a>
+      </div>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="contact.html" class="btn btn-primary" style="width:100%;">Book Strategy Call</a>
+    </div>
+  </div>
+
+  <!-- HERO — PORTFOLIO PAGE: Sleek dark showcase gallery vibe -->
+  <section class="page-hero hero-portfolio">
+    <div class="container text-center" style="position: relative; z-index: 2;">
+      <div class="badge-pill">Proof of Execution</div>
+      <h1>Our Featured <span class="text-gradient">Portfolio & Real Client Work</span></h1>
+      <p style="max-width: 750px; margin: 1rem auto 0;">Explore our live, delivered client projects across Custom Web
+        Development, Technical SEO, SMM campaigns, and Mobile App development with real links and real results.</p>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CATEGORY FILTER TABS -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Projects</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">Web Development</button>
+        <button class="filter-btn" data-filter="seo" id="filterSeo">SEO Projects</button>
+        <button class="filter-btn" data-filter="smm" id="filterSmm">SMM Campaigns</button>
+        <button class="filter-btn" data-filter="saas" id="filterSaas">SaaS & Apps</button>
+      </div>
+
+      <!-- PORTFOLIO GALLERY GRID — REAL CLIENT PROJECTS -->
+      <div class="portfolio-grid" id="portfolioGallery">
+
+        <!-- ==================== WEB DEVELOPMENT ==================== -->
+
+        <!-- Web 1: Airport Luggage Vans -->
+        <article class="glass-card portfolio-item" data-category="web">
+          <div class="portfolio-thumb thumb-gradient-blue">
+            <span class="portfolio-tag">Web Development</span>
+            <img src="luggage van.jpg" alt="Airport Luggage Vans" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Airport Transfer & Luggage Van Booking Portal</h3>
+            <p>Custom built responsive web portal for UK based airport luggage van transfer service featuring
+              real time booking, route coverage, and premium UI.</p>
+            <div class="tech-stack">Tech: HTML5, CSS3, Vanilla JS, Node API</div>
+            <a href="https://airport-luggage-van.vercel.app" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Web 2: London Prestige Preview -->
+        <article class="glass-card portfolio-item" data-category="web">
+          <div class="portfolio-thumb thumb-gradient-darkblue">
+            <span class="portfolio-tag">Web Development</span>
+            <img src="london prestige chuffeur .jpg" alt="London Prestige Preview" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Luxury Chauffeur Service Landing Page</h3>
+            <p>Glassmorphic premium landing page for London based luxury chauffeur service showcasing fleet, services,
+              and instant booking flows.</p>
+            <div class="tech-stack">Tech: Next.js, Glassmorphic UI, Vercel Deploy</div>
+            <a href="https://londonprestigepreview.netlify.app" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Web 3: Al Fatima Academy -->
+        <article class="glass-card portfolio-item" data-category="web">
+          <div class="portfolio-thumb thumb-gradient-cyan">
+            <span class="portfolio-tag">Web Development</span>
+            <img src="al fatima theme.jpg" alt="Al Fatima Academy" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Educational Institution Web Platform</h3>
+            <p>Complete website for Al Fatima Academy featuring course listings, admissions, faculty profiles, and
+              SEO optimized content architecture.</p>
+            <div class="tech-stack">Tech: HTML5, CSS3, SEO Optimization</div>
+            <a href="https://alfatimaacademy.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- ==================== SMM PROJECTS ==================== -->
+
+        <!-- SMM 1: Aurrify -->
+        <article class="glass-card portfolio-item" data-category="smm">
+          <div class="portfolio-thumb thumb-gradient-purple">
+            <span class="portfolio-tag">SMM Campaign</span>
+            <!-- Dynamic Online Placeholder Image -->
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
+              alt="Aurrify SMM" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Social Media Growth & Brand Strategy</h3>
+            <p>Complete SMM management and brand building for Aurrify targeted campaigns, creative content strategy,
+              and social presence development.</p>
+            <div class="tech-stack">Platform: Meta, Instagram, Brand Identity</div>
+            <a href="https://aurrify.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Visit
+              Client Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SMM 2: Nobel Build Repairs -->
+        <article class="glass-card portfolio-item" data-category="smm">
+          <div class="portfolio-thumb thumb-gradient-teal">
+            <span class="portfolio-tag">SMM Campaign</span>
+            <!-- Dynamic Online Placeholder Image -->
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop"
+              alt="Nobel Build Repairs" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>UK Construction Company Social Media</h3>
+            <p>SMM strategy for Nobel Build Repairs UK brand awareness campaigns, before/after content showcases,
+              and lead generation through social ads.</p>
+            <div class="tech-stack">Platform: Facebook, Instagram, LinkedIn Ads</div>
+            <a href="https://nobelbuildrepairs.co.uk" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">Visit Client Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SMM 3: BJ Architects -->
+        <article class="glass-card portfolio-item" data-category="smm">
+          <!-- BJ Architects Project Card Thumb -->
+          <div class="portfolio-thumb thumb-gradient-violet">
+            <span class="portfolio-tag">SMM Campaign</span>
+            <img src="BJ Architects.PK.jpg" alt="BJ Architects Portfolio" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Architectural Firm Creative SMM</h3>
+            <p>Creative social media portfolio management for BJ Architects showcasing architectural projects on
+              Behance, Instagram, and LinkedIn to attract design clients.</p>
+            <div class="tech-stack">Platform: Behance, Instagram, LinkedIn</div>
+            <a href="https://behance.net/bjarchitects" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Behance Portfolio &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SMM 4: Ustad Labha Food Point -->
+        <article class="glass-card portfolio-item" data-category="smm">
+          <div class="portfolio-thumb thumb-gradient-gold">
+            <span class="portfolio-tag">SMM Campaign</span>
+            <!-- Dynamic Online Placeholder Image -->
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop"
+              alt="Ustad Labha Food Point" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Food Brand Social Media Management</h3>
+            <p>Local food point social media growth creative menu showcasing, daily posts, story campaigns, and
+              Facebook ad campaigns driving footfall and online orders.</p>
+            <div class="tech-stack">Platform: Facebook Page Management & Ads</div>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View
+              Facebook Page &rarr;</a>
+          </div>
+        </article>
+
+        <!-- ==================== SEO PROJECTS ==================== -->
+
+        <!-- SEO 1: London Prestige Chauffeur -->
+        <article class="glass-card portfolio-item" data-category="seo">
+          <div class="portfolio-thumb thumb-gradient-green">
+            <span class="portfolio-tag">Technical SEO</span>
+            <img src="london seo.jpg" alt="London Prestige Chauffeur" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Chauffeur Service Google #1 Ranking</h3>
+            <p>Full technical SEO audit, JSON LD schema, Core Web Vitals 100/100, and backlink strategy pushing multiple
+              high intent keywords to Google's first page.</p>
+            <div class="tech-stack">Tech: JSON LD Schema, Core Web Vitals, Backlinks</div>
+            <p><strong>Note:</strong> This project is currently ranked #1 on Google for high intent keywords in the
+              London
+              chauffeur industry.</p>
+
+            <a href="https://londonprestigechauffeur.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SEO 2: Prestige Chauffeur London -->
+        <article class="glass-card portfolio-item" data-category="seo">
+          <div class="portfolio-thumb thumb-gradient-emerald">
+            <span class="portfolio-tag">Technical SEO</span>
+            <img src="prestige seo.jpg" alt="Prestige Chauffeur London" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Luxury Transport SEO Dominance</h3>
+            <p>Comprehensive SEO overhaul for Prestige Chauffeur London high authority keyword strategy, site speed
+              optimization, and structured data integration.</p>
+            <div class="tech-stack">Tech: Technical SEO, Schema Markup, CWV</div>
+            <a href="https://prestigechauffeurlondon.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SEO 3: RSY Yachts -->
+        <article class="glass-card portfolio-item" data-category="seo">
+          <div class="portfolio-thumb thumb-gradient-sea">
+            <span class="portfolio-tag">Technical SEO</span>
+            <!-- Dynamic Online Placeholder Image -->
+            <img src="rsy seo.jpg" alt="RSY Yachts" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Luxury Yacht Charter SEO Campaign</h3>
+            <p>SEO strategy for RSY Yachts targeting premium yacht charter keywords, geographic SEO, and luxury market
+              positioning through content and technical optimization.</p>
+            <div class="tech-stack">Tech: Local SEO, Geographic Targeting, Schema</div>
+            <a href="https://rsyyachts.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">View Live Site &rarr;</a>
+          </div>
+        </article>
+
+        <!-- ==================== SAAS & APPS ==================== -->
+
+        <!-- SaaS 1: Shehnaz Med Ledger -->
+        <article class="glass-card portfolio-item" data-category="saas">
+          <div class="portfolio-thumb thumb-gradient-deep-purple">
+            <span class="portfolio-tag">SaaS & Apps</span>
+            <!-- Dynamic Online Placeholder Image -->
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop"
+              alt="Shehnaz Med Ledger" class="portfolio-img" loading="lazy">
+          </div>
+          <div class="portfolio-content">
+            <h3>Pharmacy & Grocery Management SaaS</h3>
+            <p>Custom SaaS management system for pharmacy and grocery stores featuring inventory tracking, billing
+              ledger, sales reports, and multi store dashboard management.</p>
+            <div class="tech-stack">Tech: React, Node.js, PostgreSQL, Dashboard UI</div>
+            <a href="projects.html#shehnaz-med" class="btn btn-outline btn-sm">View Case Study &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section-padding" style="background: rgba(0, 82, 255, 0.05);">
+    <div class="container text-center">
+      <h2>Ready to Scale Your Brand Online?</h2>
+      <p style="margin: 0.8rem 0 2rem;">Get started with custom packages from <strong>PKR 70,000</strong> or speak
+        directly with Founder & CEO Ali Hamza.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="packages.html" class="btn btn-glow" id="portfolioCTABtn">Calculate Custom Budget</a>
+        <a href="contact.html" class="btn btn-outline">Book Strategy Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:0.75rem;">
+            <img src="Logo.png" alt="NexMove Development Logo">
+            <span class="brand-text">NexMove <span class="text-cyan">Development</span></span>
+          </a>
+          <p>NexMove Development showcases proven execution across Custom Web Development, Technical SEO, SMM, Digital
+            Marketing, and Software Engineering.</p>
+          <div style="margin-top: 1rem; color: var(--accent-cyan); font-weight: 700; font-size: 0.9rem;">
+            Founder & CEO Ali Hamza | Leading Digital Innovation Since '23
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="projects.html">Case Studies</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <div class="footer-links">
+            <a href="services.html#web-development">Web Development</a>
+            <a href="services.html#technical-seo">Technical SEO</a>
+            <a href="services.html#smm">SMM Social Media</a>
+            <a href="services.html#digital-marketing">Digital Marketing</a>
+            <a href="services.html#software-engineering">Software Engineering</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+923225673641">📞 +92 322 5673641</a>
+            <a href="mailto:nexmove.pk@gmail.com">✉️ nexmove.pk@gmail.com</a>
+            <a href="packages.html">💰 Custom Pricing</a>
+            <a href="contact.html">📅 Book Strategy Call</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NexMove Development. All Rights Reserved.</div>
+        <div>Founder & CEO: Ali Hamza &nbsp;|&nbsp; Vision &nbsp;·&nbsp; Leadership &nbsp;·&nbsp; Innovation
+          &nbsp;·&nbsp; Growth</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
